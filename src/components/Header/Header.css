@@ -1,0 +1,26 @@
+.home_menu {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  top: 53px;
+  left: 0px;
+  background-color: rgba(2, 2, 2, 0.8);
+  transform: translate(-200px);
+  transition: 0.2s;
+  z-index: 100;
+}
+.menu_active {
+  transform: translate(0px);
+}
+/* .home_menu h2{
+
+} */
+a {
+  text-decoration: none;
+}
+/* *{
+  color: black;
+} */
+.MuiIconButton-root{
+  display: none;
+}

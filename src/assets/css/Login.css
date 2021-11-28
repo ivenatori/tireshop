@@ -1,0 +1,143 @@
+.login {
+  width: 100%;
+  min-height: 95vh;
+  background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148702443.jpg?size=626&ext=jpg');
+  display: flex;
+  opacity: 0.8;
+}
+.loginContainer {
+  background: url('https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  padding: 60px;
+  padding-top: 25px;
+  margin: auto;
+  min-width: 380px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  opacity: 1;
+}
+.authButton {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: greenyellow;
+  cursor: pointer;
+}
+.authLabel {
+  margin: 14px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1;
+  color: greenyellow;
+  font-weight: 700;
+}
+.authInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+.authP {
+  margin: 25px 0 0 0;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.authSpan {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  font-weight: bold;
+}
+.errorMsg {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1100px) {
+  .loginContainer {
+  margin-top: 20px;
+  padding-top: 20px;
+  min-width: 150px;
+  min-height: 170px;
+  
+  }
+  .authP{
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .loginContainer {
+  padding-top: 20px;
+  min-width: 150px;
+  min-height: 170px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 15px;
+  }
+  .authP{
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .loginContainer {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-width: 150px;
+  min-height: 170px;
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+  .authP{
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .errorMsg{
+    font-size: 12px;
+  }
+  .authLabel{
+    font-size: 14px;
+  }
+  .btnContainer{
+    padding: 20px;
+  }
+  
+}
+/* @media only screen and (max-width: 700px) {
+  .loginContainer {
+  padding-top: 20px;
+  min-width: 200px;
+  min-height: 220px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .loginContainer {
+  padding-top: 20px;
+  min-width: 150px;
+  min-height: 170px;
+  
+  }
+  .authP{
+    margin-top: 15px;
+  }
+} */

@@ -1,0 +1,66 @@
+.bg_add_product {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: contain; */
+  background-image: url(https://shina.kg/wa-data/public/site/themes/profitbuy/img/custom_background.jpg);
+}
+.add_product {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  background-color: rgb(202, 192, 179);
+}
+.add_product div {
+  margin: 40px;
+  position: relative;
+}
+.add_product div input {
+  font-size: 16px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  /* border: none; */
+  background-color: inherit;
+  color: #fff;
+  border-bottom: 2px solid rgb(252, 248, 248);
+}
+
+.add_product input:focus {
+  outline: none;
+}
+.add_product label {
+  color: rgb(153, 32, 92);
+  font-size: 28px;
+  pointer-events: none;
+  position: absolute;
+  transition: 0.2s ease all;
+}
+/* .add_product input:focus label {
+  top: -15px;
+  font-size: 14px;
+  color: #5264ae;
+} */
+.btn_add {
+  width: 140px;
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 40px;
+  font-size: 25px;
+  color: #fff;
+  border-bottom: 2px solid hotpink;
+}
+.btn_add:hover {
+  transition: 0.5s linear;
+  background-position: -200% 0, 0 0;
+  color: #fff;
+  background-color: rgb(36, 12, 12);
+}
+.btn_link {
+  margin: 0 auto;
+}

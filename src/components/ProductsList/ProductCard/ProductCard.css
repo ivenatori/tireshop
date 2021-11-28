@@ -1,0 +1,140 @@
+.product_card {
+  position: relative;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(51, 51, 51);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  transition: 1s;
+  background: url(https://images.unsplash.com/photo-1528459105426-b9548367069b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=664&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 30px black;
+  margin-bottom: 20px;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+}
+.tire_image {
+  overflow: hidden;
+}
+.product_card .product_img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.product_card:hover {
+  border-color: white;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+.tire_size {
+  display: flex;
+  justify-content: space-between;
+}
+.tire_price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border-radius: 30px; */
+  /* box-shadow: 1px 1px 4px black; */
+  height: 3em;
+}
+
+.btn_to_basket {
+  width: 6em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid rgba(255, 255, 255, 1);
+  border-left: 2px solid rgba(255, 255, 255, 1);
+  background-color: whitesmoke;
+  transition: 0.6s;
+  border-radius: 40px;
+}
+.btn_to_basket:hover {
+  border: 2px solid bisque;
+  color: rgb(87, 85, 85);
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  border-radius: 40px;
+  background: bisque;
+}
+.product_price {
+  width: 50%;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #108b00;
+  text-transform: uppercase;
+  text-shadow: 1px -3px 0px rgb(0, 0, 0);
+  margin: 0;
+  text-overflow: ellipsis;
+}
+.tire_size button {
+  width: 50%;
+  color: rgb(27, 26, 26);
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: 0.5em 2em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  border-bottom-width: 120%;
+  /* border: 2px solid black; */
+  border-radius: 40px;
+  transition: 0.2s;
+  background-color: rgb(129, 117, 117);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tire_size button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  border-color:black;
+}
+.tire_about {
+  padding: 10px;
+}
+.btn_delete_card {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(41, 40, 40);
+  color: #fff;
+}
+.btn_delete_card:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.lick {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: rgba(34, 33, 33, 0.4);
+  border-radius: 30px;
+}
+.lick:hover {
+  transform: rotateY(180deg) scale(1.3);
+}
