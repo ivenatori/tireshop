@@ -41,7 +41,7 @@
   }
   .filter_menu-flex a {
     width: 25%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
   .filter_menu {
     width: 80%;

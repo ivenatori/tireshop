@@ -5,14 +5,13 @@ import { productsContext } from '../../contexts/ProductsContext';
 import './Cart.css'
 import {
     calcSubPrice,
-    calcSubPriceLarge,
     calcSubPriceSmall,
     calcTotalPrice,
     getCountProductsInCart,
   } from "../../helpers/cartFunctions"
 
 const Cart = () => {
-    const {dispatch,getProductsFromBasket,cart,changeLargeProductCount,changeSmallProductCount} = useContext(productsContext)
+    const {dispatch,getProductsFromBasket,cart,changeSmallProductCount} = useContext(productsContext)
     useEffect(()=>{
         getProductsFromBasket()
     },[])
@@ -55,19 +54,14 @@ const Cart = () => {
             </div>
             <div className='cart_block'>
                 <div>
-                    <span>count small</span><br />
+                    <span>Количество</span><br />
                     <input  type="number" min='0' onChange ={(e)=> changeSmallProductCount(e.target.value,elem.item.id)}/>
                 </div>
-                <div>
-                <span>count large</span><br />
-                     <input type="number" min='0' onChange ={(e)=> changeLargeProductCount(e.target.value,elem.item.id)}/>
-                 </div>
+
             </div>
 
             <div className='cart_block'>           
-              <div>{calcSubPriceSmall(elem)}  <br /><span>small</span></div>
-              <div>{calcSubPriceLarge(elem)}  <br /><span>large</span></div>
-              <div>{calcSubPrice(elem)}       <br /><span>sum</span></div>
+              <div>{calcSubPriceSmall(elem)}  <br /><span>Сумма</span></div>
               <div><button className='btn_delete_cart' onClick={()=>deleteFromBasket(elem.item.id)}>X</button></div>
             </div>                
         </div>

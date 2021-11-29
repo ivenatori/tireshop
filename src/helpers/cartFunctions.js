@@ -6,16 +6,16 @@ export function getCountProductsInCart() {
 export function calcSubPriceSmall(product) {
   return product.countSmall * product.item.priceSmall;
 }
-export function calcSubPriceLarge(product) {
-  return product.countLarge * product.item.priceLarge;
-}
+// export function calcSubPriceLarge(product) {
+//   return product.countLarge * product.item.priceLarge;
+// }
 export function calcSubPrice(product) {
-  return calcSubPriceLarge(product) + calcSubPriceSmall(product);
+  return  product.countSmall * product.item.priceSmall;
 }
 export function calcTotalPrice(products) {
   let totalPrice = 0;
   products.forEach((element) => {
-    totalPrice += element.subPriceSmall + element.subPriceLarge;
+    totalPrice += element.subPriceSmall;
   });
   return totalPrice;
 }

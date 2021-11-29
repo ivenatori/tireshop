@@ -1,5 +1,6 @@
 .cart {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .cart input {
   display: block;
@@ -12,7 +13,7 @@
 }
 .cart_table {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: white; */
 }
 .card_cart {
   width: 100%;
@@ -61,7 +62,8 @@ th {
   transition: 0.5s;
 }
 .a_buy {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
 .btn_buy:hover {
@@ -75,7 +77,7 @@ th {
   font-size: 40px;
   line-height: 40px;
   font-weight: 900;
-  color: rgb(255, 115, 0);
+  color: white;
   background-color: rgba(0, 0, 0, 0.6);
   width: 260px;
   margin: 10px auto;

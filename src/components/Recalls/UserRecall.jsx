@@ -8,7 +8,7 @@ const UserRecall = ({elem}) => {
     let two = Math.floor(Math.random()*255)
     let three = Math.floor(Math.random()*255)
 let userStyle = {
-    color: `rgb(${one},${two},${three})`
+    color: 'white'
 }
 
 

@@ -2,7 +2,6 @@ import React, { createContext, useReducer } from "react";
 import axios from "axios";
 import {
   calcSubPrice,
-  calcSubPriceLarge,
   calcSubPriceSmall,
   calcTotalPrice,
   getCountProductsInCart,
@@ -92,10 +91,8 @@ const ProductsContextProvider = ({ children }) => {
     }
     let newProduct = {
       item: cardToBasket,
-      countLarge: 1,
       countSmall: 1,
-      subPriceSmall: +cardToBasket.priceLarge,
-      subPriceLarge: +cardToBasket.priceSmall,
+      subPriceSmall: +cardToBasket.priceSmall,
       subPrice: 0,
     };
 
@@ -111,8 +108,7 @@ const ProductsContextProvider = ({ children }) => {
     }
 
     newProduct.subPrice =
-      productInBasket.cardToBasket.subPriceSmall +
-      productInBasket.cardToBasket.subPriceLarge;
+      productInBasket.cardToBasket.subPriceSmall ;
 
     productInBasket.totalPrice = calcTotalPrice(productInBasket.cardToBasket);
 
@@ -127,7 +123,7 @@ const ProductsContextProvider = ({ children }) => {
     getProductsFromBasket();
   }
 
-  function changeSmallProductCount(count = 0, id) {
+  function changeSmallProductCount(count = 1, id) {
     let cart = JSON.parse(localStorage.getItem("Basket"));
     cart.cardToBasket = cart.cardToBasket.map((elem) => {
       console.log(elem.item);
@@ -143,22 +139,22 @@ const ProductsContextProvider = ({ children }) => {
     getProductsFromBasket();
   }
 
-  function changeLargeProductCount(count = 0, id) {
-    let cart = JSON.parse(localStorage.getItem("Basket"));
-    cart.cardToBasket = cart.cardToBasket.map((elem) => {
-      if (elem.item.id === id) {
-        elem.countLarge = count;
-        elem.subPriceLarge = calcSubPriceLarge(elem);
-        elem.subPrice = calcSubPrice(elem);
+  // function changeLargeProductCount(count = 0, id) {
+  //   let cart = JSON.parse(localStorage.getItem("Basket"));
+  //   cart.cardToBasket = cart.cardToBasket.map((elem) => {
+  //     if (elem.item.id === id) {
+  //       elem.countLarge = count;
+  //       elem.subPriceLarge = calcSubPriceLarge(elem);
+  //       elem.subPrice = calcSubPrice(elem);
 
-        console.log(elem.priceSmall);
-      }
-      return elem;
-    });
-    cart.totalPrice = calcTotalPrice(cart.cardToBasket);
-    localStorage.setItem("Basket", JSON.stringify(cart));
-    getProductsFromBasket();
-  }
+  //       console.log(elem.priceSmall);
+  //     }
+  //     return elem;
+  //   });
+  //   cart.totalPrice = calcTotalPrice(cart.cardToBasket);
+  //   localStorage.setItem("Basket", JSON.stringify(cart));
+  //   getProductsFromBasket();
+  // }
 
   // favorite
 
@@ -217,7 +213,6 @@ const ProductsContextProvider = ({ children }) => {
         getProductsFromBasket,
         favorites: state.favorites,
         changeSmallProductCount,
-        changeLargeProductCount,
         getFavorites,
         getRecalls,
         sendRecall,

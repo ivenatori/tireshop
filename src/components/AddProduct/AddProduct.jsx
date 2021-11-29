@@ -17,10 +17,10 @@ const AddProduct = () => {
         <div className='add_product '>
             <div><input onChange={(e)=>setProduct({...product,product: e.target.value})} list='data' type="text" />
             <datalist id='data'>
-                <option value="pizza"></option>
-                <option value="sushi"></option>
-                <option value="drinks"></option>
-                <option value="sous"></option>
+                <option value="r14"></option>
+                <option value="r15"></option>
+                <option value="r16"></option>
+                <option value="r17"></option>
                 <option value=""></option>
                 <option value=""></option>
             </datalist>
@@ -28,8 +28,7 @@ const AddProduct = () => {
             <div><input required onChange={(e)=>setProduct({...product,Pname: e.target.value})} type="text" /><label>tire name</label></div>
             <div><input required onChange={(e)=>setProduct({...product,image: e.target.value})} type="text" /><label>image</label></div>
             <div><input required onChange={(e)=>setProduct({...product,about: e.target.value})} type="text" /><label>about</label></div>
-            <div><input required onChange={(e)=>setProduct({...product,priceSmall: e.target.value})} type="text" /><label>price small</label></div>
-            <div><input required onChange={(e)=>setProduct({...product,priceLarge: e.target.value})} type="text" /><label>price large</label></div>
+            <div><input required onChange={(e)=>setProduct({...product,priceSmall: e.target.value})} type="text" /><label>price</label></div>
             <Link className='btn_link'  to='/'><button className='btn_add' onClick={()=>addProduct()}>add</button></Link>
         </div>
         </div>

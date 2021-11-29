@@ -23,6 +23,9 @@ import { productsContext } from '../../contexts/ProductsContext'
 import './Header.css'
 import history from '../../helpers/history'
 import AddBoxIcon from '@mui/icons-material/AddBox';
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
+import ChatIcon from '@mui/icons-material/Chat';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -188,7 +191,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box id='header' sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{ background: '	#FFFF33', color: 'black'}}>
+      <AppBar position="static" style={{ background: '	#FFFF33', color: 'blue'}}>
         <Toolbar>
           <IconButton style={{display: 'none'}}
             size="large"
@@ -208,7 +211,7 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Link to="/" style={{textDecoration: "none", color: "white"}}>
-          <Typography style={{color: 'black'}}
+          <Typography style={{color: 'blue', fontWeight: 'bold'}}
             variant="h6"
             noWrap
             component="div"
@@ -217,7 +220,7 @@ export default function PrimarySearchAppBar() {
             Dongolok.kg
           </Typography>
           </Link>
-          <Search onChange={handleValue} value={searchValue}>
+          <Search onChange={handleValue} value={searchValue} style={{justifyContent:'space-between'}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -234,7 +237,7 @@ export default function PrimarySearchAppBar() {
               size="large"
               aria-label="show 17 new notifications"
               color="inherit">
-              <AddBoxIcon/>
+              <AddBoxIcon style={{color:'#1565c0'}}/>
             </IconButton>
             </Link>}
             <Link to="/cart" style={{color: "white"}}>
@@ -244,11 +247,11 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <Badge badgeContent={cartLength} color="error">
-              <AddShoppingCartIcon/>
+              <AddShoppingCartIcon style={{color:"#1565c0"}}/>
               </Badge>
             </IconButton>
             </Link>
-            <IconButton
+            {/* <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -258,8 +261,13 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </Box>
+          <Link to="./recalls">
+        <ChatIcon style={{color:'#1565c0', marginRight:'10px'}}/>
+      </Link>
+
+          
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -279,14 +287,16 @@ export default function PrimarySearchAppBar() {
                 disableElevation
                 onClick={handleLogOut}
               >
-                Выйти
+                {/* Выйти */}
+                <LogoutIcon/>
               </Button>
             </Link>
           ) : null}
           {email ? null : (
             <Link to="/auth">
               <Button variant="contained" disableElevation>
-                Войти
+                {/* Войти */}
+                <LoginIcon/>
               </Button>
             </Link>
           )}

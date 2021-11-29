@@ -1,4 +1,4 @@
-import { GpsFixed } from "@mui/icons-material";
+import { GpsFixed, Grade } from "@mui/icons-material";
 import { bgcolor } from "@mui/system";
 import React from "react";
 import AddProduct from "../AddProduct/AddProduct";
@@ -6,7 +6,6 @@ import Filter from "../Filter/Filter";
 import ProductsList from "../ProductsList/ProductsList";
 import MainCarousel from "../MainCarousel/MainCarousel";
 import { Link } from "react-router-dom";
-import Favorites from "../../assets/css/favorites.png";
 import "./Home.css";
 import { Button } from 'react-bootstrap';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
@@ -19,7 +18,7 @@ const Home = () => {
     height: "50px",
     color: "white",
     borderRadius: "50%",
-    backgroundColor: "black",
+    // backgroundColor: "black",
     top: "80%",
     left: "5%",
     padding: "10px",
@@ -33,7 +32,7 @@ const Home = () => {
     color: "white",
     borderRadius: "50%",
     top: "50%",
-    right: "10%",
+    right: "5%",
   };
   let imgStyle = {
     "box-shadow": "1px 1px 30px #fff",
@@ -57,29 +56,23 @@ const Home = () => {
   return (
     <div>
       <Filter />
-      <MainCarousel />
-      <ButtonGroup size="lg" className="mb-2">
-    <Button>R14</Button>
-    <Button>R15</Button>
-    <Button>R16</Button>
-    <Button>R17</Button>
-    <Button>R18</Button>
-    
-  </ButtonGroup>
+      {/* <MainCarousel /> */}
+      
   
-      <ProductsList key="pizza" title="pizza" title2="R14" />
-      <ProductsList key="sushi" title="sushi" title2="R15" />
-      <ProductsList key="drinks" title="drinks" title2="R16" />
-      <ProductsList key="r18" title="R18" title2="R18" />
+      <ProductsList key="r14" title="r14" title2="r14" />
+      <ProductsList key="r15" title="r15" title2="r15" />
+      <ProductsList key="r16" title="r16" title2="r16" />
+      <ProductsList key="r17" title="r17" title2="r17" />
       <a style={style} href="#header">
-        top
+      <img style={imgStyle} width="50px" height="50px" src={'http://cdn.onlinewebfonts.com/svg/img_158933.png'}></img>
       </a>
       <Link style={styles} to="/favorites">
-        <img style={imgStyle} width="70px" height="70px" src={'https://cdn-icons.flaticon.com/png/512/4208/premium/4208408.png?token=exp=1637752310~hmac=659dcbb0ade3dabee850e6450afce469'}></img>
+        <img style={imgStyle} width="70px" height="70px" src={'https://icon-library.com/images/favorite-icon/favorite-icon-12.jpg'}></img>
+        
       </Link>
-      <Link className="recolls-btn" style={showRecolls} to="./recalls">
+      {/* <Link className="recolls-btn" style={showRecolls} to="./recalls">
         Отзывы
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -20,11 +20,11 @@ const Filter = () => {
             <div className='container'>
                     <div className='filter_menu'>
                         <ul className='filter_menu-flex'>
-                            <a href='#R14'><li>R14</li></a>
-                            <a href='#R15'><li>R15</li></a>
-                            <a href='#R16'><li>R16</li></a>
-                            <a href='#R17'><li>R17</li></a>
-                            <a href='#R18'><li>R18</li></a>
+                            <a href='#r14'><li>R14</li></a>
+                            <a href='#r15'><li>R15</li></a>
+                            <a href='#r16'><li>R16</li></a>
+                            <a href='#r17'><li>R17</li></a>
+                            <a href='#r18'><li>R18</li></a>
                            
                         </ul>
                     </div>
