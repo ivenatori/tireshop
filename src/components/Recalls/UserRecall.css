@@ -1,8 +1,7 @@
 .message {
-  width: 60%;
+  width: 80%;
   height: 100%;
   margin: 20px auto;
-  display: flex;
   justify-content: space-between;
   /* border: 1px solid red; */
   box-shadow: 1px 1px 10px #fff;
@@ -14,5 +13,5 @@
   display: inline-block;
 }
 .user_message img {
-  max-width: 500px;
+  max-width: 100px;
 }

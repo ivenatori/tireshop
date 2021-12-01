@@ -24,7 +24,6 @@ const Filter = () => {
                             <a href='#r15'><li>R15</li></a>
                             <a href='#r16'><li>R16</li></a>
                             <a href='#r17'><li>R17</li></a>
-                            <a href='#r18'><li>R18</li></a>
                            
                         </ul>
                     </div>

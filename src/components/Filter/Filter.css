@@ -6,7 +6,7 @@
   padding: 0;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   list-style: none;
   background-color: rgba(252, 242, 255, 0);
 }

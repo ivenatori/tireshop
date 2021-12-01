@@ -2,11 +2,6 @@ import React from 'react';
 import './UserRecall.css'
 const UserRecall = ({elem}) => {
 
-
-
-    let one = Math.floor(Math.random()*255)
-    let two = Math.floor(Math.random()*255)
-    let three = Math.floor(Math.random()*255)
 let userStyle = {
     color: 'white'
 }

@@ -47,7 +47,7 @@ const ProductsContextProvider = ({ children }) => {
       payload: data,
     });
   };
-  //добавление новой пиццы
+  //добавление новых шин
   async function addNewProduct(newProduct) {
     await axios.post(`http://localhost:8000/products`, newProduct);
     getProducts();

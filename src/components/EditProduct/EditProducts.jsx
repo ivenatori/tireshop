@@ -35,11 +35,11 @@ const EditProducts = ({elem,openModal,setOpenModal}) => {
                 <option value=""></option>
             </datalist>
             </div>
-            <div className='inp_block'><input value={editedProduct.Pname} onChange={(e)=>setEditedProduct({...editedProduct,Pname: e.target.value})} type="text" /><label>tire name</label></div>
-            <div className='inp_block'><input value={editedProduct.image} onChange={(e)=>setEditedProduct({...editedProduct,image: e.target.value})} type="text" /><label>image</label></div>
-            <div className='inp_block'><input value={editedProduct.about} onChange={(e)=>setEditedProduct({...editedProduct,about: e.target.value})} type="text" /><label>about</label></div>
-            <div className='inp_block'><input value={editedProduct.priceSmall} onChange={(e)=>setEditedProduct({...editedProduct,priceSmall: e.target.value})} type="text" /><label>price</label></div>
-            <button className='btn_save' onClick={(e)=>editProduct(elem)}>save</button>  
+            <div className='inp_block'><input value={editedProduct.Pname} onChange={(e)=>setEditedProduct({...editedProduct,Pname: e.target.value})} type="text" /><label>Название</label></div>
+            <div className='inp_block'><input value={editedProduct.image} onChange={(e)=>setEditedProduct({...editedProduct,image: e.target.value})} type="text" /><label>Картинка</label></div>
+            <div className='inp_block'><input value={editedProduct.about} onChange={(e)=>setEditedProduct({...editedProduct,about: e.target.value})} type="text" /><label>Описание</label></div>
+            <div className='inp_block'><input value={editedProduct.priceSmall} onChange={(e)=>setEditedProduct({...editedProduct,priceSmall: e.target.value})} type="text" /><label>Цена</label></div>
+            <button className='btn_save' onClick={(e)=>editProduct(elem)}>Сохранить</button>  
         </div>
         </div>
         </div>

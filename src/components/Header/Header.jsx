@@ -217,7 +217,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Dongolok.kg
+            DONGOLOK.kg
           </Typography>
           </Link>
           <Search onChange={handleValue} value={searchValue} style={{justifyContent:'space-between'}}>
@@ -231,7 +231,7 @@ export default function PrimarySearchAppBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          {(user.email=='erlan@gmail.com'||user.email=='chingiz@gmail.com' )&&<Link  to="/add" style={{color: "white"}}>
+          {(user.email=='chingiz@gmail.com' )&&<Link  to="/add" style={{color: "white"}}>
 
             <IconButton 
               size="large"

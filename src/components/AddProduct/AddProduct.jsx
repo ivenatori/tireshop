@@ -25,11 +25,11 @@ const AddProduct = () => {
                 <option value=""></option>
             </datalist>
             </div>
-            <div><input required onChange={(e)=>setProduct({...product,Pname: e.target.value})} type="text" /><label>tire name</label></div>
-            <div><input required onChange={(e)=>setProduct({...product,image: e.target.value})} type="text" /><label>image</label></div>
-            <div><input required onChange={(e)=>setProduct({...product,about: e.target.value})} type="text" /><label>about</label></div>
-            <div><input required onChange={(e)=>setProduct({...product,priceSmall: e.target.value})} type="text" /><label>price</label></div>
-            <Link className='btn_link'  to='/'><button className='btn_add' onClick={()=>addProduct()}>add</button></Link>
+            <div><input required onChange={(e)=>setProduct({...product,Pname: e.target.value})} type="text" /><label>название</label></div>
+            <div><input required onChange={(e)=>setProduct({...product,image: e.target.value})} type="text" /><label>картинка</label></div>
+            <div><input required onChange={(e)=>setProduct({...product,about: e.target.value})} type="text" /><label>описание</label></div>
+            <div><input required onChange={(e)=>setProduct({...product,priceSmall: e.target.value})} type="text" /><label>цена</label></div>
+            <Link className='btn_link'  to='/'><button className='btn_add' onClick={()=>addProduct()}>добавить</button></Link>
         </div>
         </div>
         </div>

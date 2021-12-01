@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 .back{
   height: 630px;
+
 }
 * {
   
   font-family: "Roboto", sans-serif;
 }
 h1{
-    color: rgb(194, 226, 13)
+    color: rgb(57, 57, 228);
 }
 .visa{
   width: 60px;
@@ -20,7 +21,7 @@ h1{
   transform: translate(-50%, -50%);
   max-width: 450px;
   width: 100%;
-  background: rgba(225,225,225,0.35);
+  background: rgba(177, 168, 168, 0.35);
   padding: 30px;
   border-radius: 25px;
 }
